@@ -61,10 +61,12 @@ const FormSubmission = () => {
                 AIResponseFormat: AIResponseFormat
             }) + `\n\nThe resume content is:\n${resumeText}`;
 
+            const OPENROUTER_KEY = import.meta.env.VITE_OPENROUTER_API_KEY;
+
             const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
                 method: "POST",
                 headers: {
-                    Authorization: `Bearer YOUR_API_KEY`,
+                    Authorization: `Bearer ${OPENROUTER_KEY}`,
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
