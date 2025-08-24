@@ -5,7 +5,7 @@ import FileUploader from '../components/FileUploader'
 import Navbar from '../components/Navbar'
 import { ConvertPdfToImage } from '../lib/pdf2img'
 import { extractResumeText } from '../lib/ExtractText'
-import { AIResponseFormat } from '../lib/AiResponseFormat'
+import { AIResponseFormat } from '../lib/AIResponseFormat'
 import { prepareInstructions } from '../lib/prepareInstructions'
 import { Toaster, toast } from 'react-hot-toast'
 
